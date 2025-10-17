@@ -1,0 +1,8 @@
+<h1>Restaurant <%= @restaurant.name %></h1>
+
+<p>Adress: <%= @restaurant.address %></h1></p>
+<p>Category: <%= @restaurant.category %></h1>
+
+<%# #<p>Completed: <%= @task.completed ? "✅ Yes" : "❌ No" %>
+<p><%= link_to "Back to list", restaurants_path %></p>
+<p><%= link_to "Edit this restaurant", edit_restaurant_path(@restaurant) %></p>
